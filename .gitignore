@@ -1,0 +1,21 @@
+# Ignorer les fichiers temporaires de l'éditeur
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Ignorer les dossiers spécifiques à certains éditeurs
+.vscode/
+.idea/
+
+# Ignorer les fichiers générés par les outils de build (si présents)
+dist/
+build/
+node_modules/
+
+# Ignorer les fichiers cachés de macOS
+.DS_Store
+
+# Ignorer les fichiers cachés de Windows
+Thumbs.db
