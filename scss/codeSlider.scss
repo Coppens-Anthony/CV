@@ -1,0 +1,46 @@
+.codeSlider {
+  margin-top: 3rem;
+  h2 {
+    font-size: 12px;
+    width: 95%;
+    margin: auto auto 1rem;
+  }
+
+  .highway-slider {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    height: 5rem;
+
+    .highway-lane {
+      display: flex;
+
+      .highway-car {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1.5px solid #5671ec;
+        padding: 2rem 0;
+      }
+    }
+  }
+}
+
+@keyframes translateInfinite {
+  100% {
+    transform: translateX(calc(-180px * 9));
+  }
+}
+
+#infinite {
+  .highway-lane {
+    width: calc(180px * 18);
+
+    .highway-car {
+      width: 5%;
+      animation: translateInfinite 25s linear infinite;
+    }
+  }
+}

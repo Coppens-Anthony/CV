@@ -1,0 +1,24 @@
+header {
+  background-color: #3858e9;
+  color: white;
+
+  div {
+    width: 92%;
+    margin: auto auto 5rem;
+    h2 {
+      font-size: 40px;
+      line-height: 3rem;
+      margin-bottom: 1rem;
+    }
+    p{
+      font-size: 16px;
+      margin-bottom: 2rem;
+    }
+    a{
+      background-color: #fff;
+      padding: 1rem 8%;
+      border-radius: 5px;
+      font-weight: 500;
+    }
+  }
+}
