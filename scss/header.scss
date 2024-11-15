@@ -1,24 +1,55 @@
+@import "sizes";
+
 header {
   background-color: #3858e9;
   color: white;
 
-  div {
+  .introduction {
     width: 92%;
     margin: auto auto 5rem;
+    @media (min-width: $breakpoint-l) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    div {
+      @media (min-width: $breakpoint-l) {
+        width: 45%;
+      }
+    }
+
     h2 {
-      font-size: 40px;
+      font-size: 2.5rem;
       line-height: 3rem;
       margin-bottom: 1rem;
+      @media (min-width: $breakpoint-s) {
+        font-size: 3rem;
+      }
+      @media (min-width: $breakpoint-m) {
+        font-size: 3.5rem;
+        line-height: 4rem;
+      }
+      @media (min-width: $breakpoint-intermediaire) {
+        font-size: 4rem;
+        line-height: 4rem;
+      }
+      @media (min-width: $breakpoint-xl) {
+        font-size: 4.5rem;
+        line-height: 5rem;
+      }
     }
-    p{
-      font-size: 16px;
-      margin-bottom: 2rem;
+
+    p {
+      @media (min-width: $breakpoint-l) {
+        font-size: 1.125rem;
+        width: 90%;
+      }
     }
-    a{
+
+    a {
       background-color: #fff;
-      padding: 1rem 8%;
-      border-radius: 5px;
-      font-weight: 500;
+      color: black;
     }
   }
 }

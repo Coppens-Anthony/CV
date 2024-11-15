@@ -1,0 +1,56 @@
+@import "sizes";
+
+* {
+  font-size: 16px;
+  font-family: "Inter", "Roboto", "Source Sans Pro", "Helvetica Neue", "Arial", sans-serif !important;
+}
+
+h1, h2 {
+  font-family: "Recoleta", "serif" !important;
+  font-size: 2.286rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.classicLink {
+  background-color: #3858e9;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  display: block;
+  width: 50%;
+  border-radius: 5px;
+  font-weight: 500;
+  margin: 2rem auto 4rem 0;
+  @media (min-width: $breakpoint-l) {
+    width: 50%;
+    padding: 1rem 0;
+  }
+  @media (min-width: $breakpoint-xl) {
+    width: 30%;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
