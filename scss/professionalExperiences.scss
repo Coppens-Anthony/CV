@@ -1,5 +1,68 @@
-.professionalExperiences{
-  p{
+.professionalExperiences {
+  margin: 3.5rem 0 2rem;
+  position: relative;
+  padding-bottom: 0.8rem;
+  &:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+    width: 120vw;
+    height: 1px;
+    background-color: #c3c4c7;
+  }
+
+  .description {
     color: #3c434a;
+    margin-top: 1.5rem;
+  }
+
+  a {
+    width: 80%;
+    margin: 1rem 0 3rem;
+  }
+
+  ul {
+    li {
+      background-color: #fff;
+      margin-bottom: 1.5rem;
+      border-radius: 10px;
+
+      article {
+        width: 92%;
+        margin: auto;
+
+        img {
+          border-radius: 50px;
+          padding-top: 1rem;
+          width: 10%;
+        }
+
+        h3 {
+          font-weight: 500;
+          margin: 1rem 0;
+        }
+
+        p {
+          font-size: 0.8rem;
+          line-height: 1.2rem;
+          padding-bottom: 1rem;
+
+          a{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .backgroundImage {
+    background-image: url("https://s1.wp.com/wp-content/themes/h4/assets/hosting/globe-blue.svg");
+    position: absolute;
+    top: 3rem;
+    left: -60%;
+    opacity: 0.7;
+    z-index: -1;
+    clip-path: inset(0 0 calc(100% - 78%) 0);
   }
 }
