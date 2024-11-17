@@ -1,0 +1,36 @@
+@import "sizes";
+
+.projects {
+
+
+  .smallGithub {
+    font-size: 0.8rem;
+    text-align: center;
+    color: #3858e9;
+    margin: 0 0 1rem;
+
+    span {
+      font-family: 'Space Mono', 'Consolas', monospace !important;
+      color: #8cc615;
+      font-weight: 600;
+    }
+  }
+  .github{
+    font-family: "Recoleta", "Cormorant", "serif" !important;
+    font-size: 2rem;
+    color: #3858e9;
+    text-align: center;
+    line-height: 2.5rem;
+
+    a{
+      color: #3858e9;
+      background-color: #c3cdf8;
+      border-radius: 5px;
+      padding: 0 2%;
+      text-decoration: underline;
+    }
+  }
+  .githubLink{
+    margin: 2rem auto;
+  }
+}

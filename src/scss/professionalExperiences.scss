@@ -1,28 +1,7 @@
 @import "sizes";
 
 .professionalExperiences {
-  a {
-    width: 80%;
-    margin-top: 1rem;
-    @media (min-width: $breakpoint-s) {
-      width: 60%;
-    }
-    @media (min-width: $breakpoint-m) {
-      width: 50%;
-    }
-    @media (min-width: $breakpoint-l) {
-      width: 40%;
-    }
-    @media (min-width: $breakpoint-xl) {
-      width: 30%;
-    }
-    @media (min-width: $breakpoint-xxl) {
-      margin: 2rem 0 4rem;
-    }
-  }
-
-  ul {
-    margin-bottom: 1.5rem;
+    ul {
     @media (min-width: $breakpoint-s) {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -35,6 +14,7 @@
     li {
       background-color: #fff;
       border-radius: 10px;
+      margin-bottom: 1.5rem;
       @media (min-width: $breakpoint-xxl) {
         width: 70%;
       }

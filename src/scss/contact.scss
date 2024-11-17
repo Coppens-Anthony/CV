@@ -50,6 +50,7 @@
       border-radius: 7px;
       font-weight: 500;
       cursor: pointer;
+      margin-bottom: 1rem;
 
       &:hover{
         opacity: 0.8;
@@ -64,9 +65,8 @@
       }
       @media (min-width: $breakpoint-xl) {
         width: 25%;
-        margin: 1rem auto;
+        margin: 1rem auto 2rem;
       }
-
     }
   }
 }
