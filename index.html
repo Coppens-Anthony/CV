@@ -12,7 +12,8 @@
           content="Découvrez le CV d'Anthony Coppens à travers le site officiel de WordPress. Étudiant à l'HEPL de Seraing, en voie de devenir un développeur full stack.">
     <link href="https://cdn.cdnfonts.com/css/recoleta" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="scss/main.scss">
+    <script type="module" crossorigin src="src/js/main.js"></script>
+    <link rel="stylesheet" href="scss/style.scss">
     <title>Projet CV</title>
 </head>
 <body>
@@ -60,76 +61,88 @@
     </section>
 </header>
 <main>
-    <section class="professionalExperiences">
-            <h2>Mes expériences professionnelles</h2>
-            <p class="description">Durant mon adolescence, j'ai eu l'occasion d'acquérir certaines compétences en
-                effectuant de petits jobs.</p>
-            <a href="https://www.linkedin.com/in/anthony-coppens-8ba3832a7/" title="Se rendre sur mon compte LinkedIn"
-               class="classicLink">
-                Découvrez mon LinkedIn
-            </a>
-            <ul>
-                <li>
-                    <article>
-                        <img src="src/SVG/poire.svg" alt="Icône représentant une poire">
-                        <h3>
-                            Récolte de poires
-                        </h3>
-                        <p>
-                            Le poste consistait à cueillir les poires du verger&nbsp;: "<a href="https://terres-de-meuse.be/offres/centre-fruitier-wallon-hannut-fr-2356611/" title="Visiter le site du centre fruitier">Centre
-                                Verger Wallon</a>". J'ai appris à travailler en équipe et à écouter les autres.
-                        </p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <img src="src/SVG/crayon.svg" alt="Icône représentant le logo réalisé">
-                        <h3>
-                            Création d'un logo
-                        </h3>
-                        <p>
-                            J'ai réaliser un logo pour un groupe d'étudiants formant le "Cercle de Traduction" à Liège.
-                            J'ai
-                            alors appris à écouter l'avis de la clientèle sans tenir compte du mien.
-                        </p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <img src="src/SVG/action.svg" alt="Icône représentant un caddie">
-                        <h3>
-                            Caissier chez Action
-                        </h3>
-                        <p>
-                            J'ai travaillé au Action de Hannut pendant quelques semaines. Cela était totalement
-                            différent de
-                            ce que j'avais déjà eu l'occasion de faire. J'ai appris à gérer mon stress et à travailler
-                            sous
-                            la pression.
-                        </p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                            <img src="src/SVG/restaurant.svg" alt="Icône représentant un restaurant">
-                        <h3>
-                            Serveur en restaurant
-                        </h3>
-                        <p>
-                            J'ai acquis de l'expérience en service client et en gestion de plusisurs tables
-                            simultanément.
-                            Ce poste m'a permis de développer ma réactivité et mon sens de l'organisation dans un
-                            environnement dynamique.
-                        </p>
-                    </article>
-                </li>
-            </ul>
-        <img src="https://s1.wp.com/wp-content/themes/h4/assets/hosting/globe-blue.svg" class="backgroundImage" alt="Image de fond d'une planète référence au Web">
+    <section class="professionalExperiences section">
+        <h2>Mes expériences professionnelles</h2>
+        <p class="description">Durant mon adolescence, j'ai eu l'occasion d'acquérir certaines compétences en
+            effectuant de petits jobs.</p>
+        <a href="https://www.linkedin.com/in/anthony-coppens-8ba3832a7/" title="Se rendre sur mon compte LinkedIn"
+           class="classicLink">
+            Découvrez mon LinkedIn
+        </a>
+        <ul>
+            <li>
+                <article>
+                    <img src="src/SVG/poire.svg" alt="Icône représentant une poire">
+                    <h3>
+                        Récolte de poires
+                    </h3>
+                    <p>
+                        Le poste consistait à cueillir les poires du verger&nbsp;: "<a
+                            href="https://terres-de-meuse.be/offres/centre-fruitier-wallon-hannut-fr-2356611/"
+                            title="Visiter le site du centre fruitier">Centre
+                        Verger Wallon</a>". J'ai appris à travailler en équipe et à écouter les autres.
+                    </p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <img src="src/SVG/crayon.svg" alt="Icône représentant le logo réalisé">
+                    <h3>
+                        Création d'un logo
+                    </h3>
+                    <p>
+                        J'ai réaliser un logo pour un groupe d'étudiants formant le "Cercle de Traduction" à Liège.
+                        J'ai
+                        alors appris à écouter l'avis de la clientèle sans tenir compte du mien.
+                    </p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <img src="src/SVG/action.svg" alt="Icône représentant un caddie">
+                    <h3>
+                        Caissier chez Action
+                    </h3>
+                    <p>
+                        J'ai travaillé au Action de Hannut pendant quelques semaines. Cela était totalement
+                        différent de
+                        ce que j'avais déjà eu l'occasion de faire. J'ai appris à gérer mon stress et à travailler
+                        sous
+                        la pression.
+                    </p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <img src="src/SVG/restaurant.svg" alt="Icône représentant un restaurant">
+                    <h3>
+                        Serveur en restaurant
+                    </h3>
+                    <p>
+                        J'ai acquis de l'expérience en service client et en gestion de plusisurs tables
+                        simultanément.
+                        Ce poste m'a permis de développer ma réactivité et mon sens de l'organisation dans un
+                        environnement dynamique.
+                    </p>
+                </article>
+            </li>
+        </ul>
+        <img src="https://s1.wp.com/wp-content/themes/h4/assets/hosting/globe-blue.svg" class="backgroundImage"
+             alt="Image de fond d'une planète référence au Web">
     </section>
-    <section>
-        <h2>fusugs</h2>
-        <p>kjeufiugfu</p>
+    <section class="contact section">
+        <h2>Entrez en contact avec moi</h2>
+        <p class="description">Si vous avez une question, une demande ou simplement envie d’échanger, je suis à votre écoute. N’hésitez pas
+            à me contacter, je serai ravi de vous répondre&nbsp;! </p>
+        <form action="" method="post">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="anthonycoppens04@gmail.com">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Je vous contacte afin de..."></textarea>
+            <button type="submit" title="Envoyer les données">Envoyer</button>
+        </form>
     </section>
+
 </main>
 <footer>
 
