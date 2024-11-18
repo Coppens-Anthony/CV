@@ -1,13 +1,17 @@
 @import "sizes";
 
 .projects {
-
-
   .smallGithub {
     font-size: 0.8rem;
     text-align: center;
     color: #3858e9;
     margin: 0 0 1rem;
+    @media (min-width: $breakpoint-m) {
+      font-size: 1rem;
+    }
+    @media (min-width: $breakpoint-l) {
+      font-size: 1.2rem;
+    }
 
     span {
       font-family: 'Space Mono', 'Consolas', monospace !important;
@@ -15,14 +19,30 @@
       font-weight: 600;
     }
   }
-  .github{
+
+  .github {
     font-family: "Recoleta", "Cormorant", "serif" !important;
     font-size: 2rem;
     color: #3858e9;
     text-align: center;
     line-height: 2.5rem;
 
-    a{
+    @media (min-width: $breakpoint-m) {
+      width: 80%;
+      margin: auto;
+    }
+    @media (min-width: $breakpoint-l) {
+      width: 70%;
+    }
+    @media (min-width: $breakpoint-l) {
+      line-height: 3rem;
+      font-size: 2.5rem;
+    }
+    @media (min-width: $breakpoint-xxl) {
+      line-height: 3.5rem;
+    }
+
+    a {
       color: #3858e9;
       background-color: #c3cdf8;
       border-radius: 5px;
@@ -30,7 +50,12 @@
       text-decoration: underline;
     }
   }
-  .githubLink{
+
+  .githubLink {
     margin: 2rem auto;
+
+    @media (min-width: $breakpoint-xxl) {
+      width: 18%;
+    }
   }
 }

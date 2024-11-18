@@ -1,0 +1,18 @@
+@import "sizes";
+
+.software{
+  margin-bottom: 0;
+  h2{
+    font-size: 1.5rem;
+  }
+  .softwareLink{
+    background-color: black;
+    width: 85%;
+    margin-bottom: 2rem;
+  }
+
+  img{
+    width: 10%;
+    filter: grayscale(1);
+  }
+}

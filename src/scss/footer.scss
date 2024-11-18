@@ -1,0 +1,38 @@
+@import "sizes";
+
+footer {
+  background-color: black;
+  color: white;
+
+  .wrapperFooterList {
+    width: 92%;
+    padding: 2rem 0;
+    margin: auto;
+    li {
+      article {
+        h3 {
+          font-size: 0.8rem;
+          font-weight: 600;
+        }
+
+        ul {
+          margin: 1rem auto 2rem;
+          li {
+            font-size: 0.8rem;
+            margin-top: 1rem;
+
+            a {
+              color: white;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+}

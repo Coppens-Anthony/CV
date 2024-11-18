@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b70d4e7-ea73-4db6-9245-65b067dc2f86" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scss/contact.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/software.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/bases.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/bases.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/professionalExperiences.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/professionalExperiences.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/projects.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +68,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ZZ BACKDOOR\Desktop\CV\scss" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ZZ BACKDOOR\Desktop\CV\src" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -90,7 +93,8 @@
       <workItem from="1731762708314" duration="2779000" />
       <workItem from="1731765793935" duration="6367000" />
       <workItem from="1731779110866" duration="962000" />
-      <workItem from="1731849308955" duration="1882000" />
+      <workItem from="1731849308955" duration="7514000" />
+      <workItem from="1731915864792" duration="8964000" />
     </task>
     <servers />
   </component>
