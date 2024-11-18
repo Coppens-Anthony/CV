@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b70d4e7-ea73-4db6-9245-65b067dc2f86" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/scss/footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/software.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/projects.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/footer.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,21 +46,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ZZ BACKDOOR/Desktop/CV/scss&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.laravel-idea.search-composer-json": "true",
+    "git-widget-placeholder": "dev",
+    "last_opened_file_path": "C:/Users/ZZ BACKDOOR/Desktop/BAC_2/sites/SEF",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ZZ BACKDOOR\Desktop\CV\scss" />
@@ -94,7 +91,7 @@
       <workItem from="1731765793935" duration="6367000" />
       <workItem from="1731779110866" duration="962000" />
       <workItem from="1731849308955" duration="7514000" />
-      <workItem from="1731915864792" duration="8964000" />
+      <workItem from="1731915864792" duration="14583000" />
     </task>
     <servers />
   </component>

@@ -1,32 +1,63 @@
-@import "sizes";
-
 footer {
-  background-color: black;
+  background-color: #101517;
   color: white;
 
   .wrapperFooterList {
     width: 92%;
-    padding: 2rem 0;
+    padding: 2rem 0 0;
     margin: auto;
+
     li {
-      article {
-        h3 {
-          font-size: 0.8rem;
-          font-weight: 600;
+      position: relative;
+
+      label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.85rem;
+        font-weight: 600;
+        cursor: pointer;
+
+        .arrow {
+          content: "";
+          display: inline-block;
+          margin-left: auto;
+          width: 0.5rem;
+          height: 0.5rem;
+          border: solid white;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+          transition: transform 0.3s ease;
         }
+      }
 
-        ul {
-          margin: 1rem auto 2rem;
-          li {
-            font-size: 0.8rem;
-            margin-top: 1rem;
+      input:checked + label .arrow {
+        transform: rotate(225deg);
+      }
 
-            a {
-              color: white;
+      input:checked ~ ul {
+        visibility: visible;
+        height: auto;
+        opacity: 1;
+      }
 
-              &:hover {
-                text-decoration: underline;
-              }
+      ul {
+        margin: 0.5rem auto 2rem;
+        visibility: hidden;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: height 0.3s ease, opacity 0.3s ease;
+
+        li {
+          font-size: 0.8rem;
+          margin-top: 0.5rem;
+
+          a {
+            color: white;
+
+            &:hover {
+              text-decoration: underline;
             }
           }
         }
@@ -34,5 +65,59 @@ footer {
     }
   }
 
+  form {
+    width: 92%;
+    margin: auto auto 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
 
+    select {
+      flex: 1;
+      height: 3rem;
+      border-radius: 4px;
+      background-color: transparent;
+      border: 1px solid #c3c4c7;
+      color: #c3c4c7;
+      cursor: pointer;
+      padding-left: 3rem;
+      font-size: 1rem;
+    }
+
+    img {
+      width: 1.5rem;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+    }
+  }
+
+  .socials {
+    display: flex;
+    width: 40%;
+    margin: auto;
+    padding-bottom: 3rem;
+
+    img {
+      width: 80%;
+    }
+  }
+  .credits{
+    background-color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.85rem;
+
+    .wordpress{
+      margin-bottom: 1rem;
+      display: block;
+      color: #0675c4;
+
+      span{
+        color: black;
+      }
+    }
+  }
 }
