@@ -176,117 +176,142 @@
     </section>
 </main>
 <footer>
-    <ul class="wrapperFooterList">
-        <li>
-            <input type="checkbox" name="coords" id="coords">
-            <label for="coords">
-                Coordonnées
-                <span class="arrow"></span>
-            </label>
-            <ul>
-                <li>anthonycoppens04@gmail.com</li>
-                <li>Rue Henri Collin</li>
-                <li>21, 1350</li>
-                <li>Orp-Le-Grand</li>
-            </ul>
-        </li>
-        <li>
-            <input type="checkbox" name="tools" id="tools">
-            <label for="tools">
-                Outils
-                <span class="arrow"></span>
-            </label>
-            <ul>
-                <li>
-                    <a href="https://zealdocs.org/" title="Se rendre sur Zeal">Zeal</a>
-                </li>
-                <li>
-                    <a href="https://codepen.io/" title="Se rendre sur CodePen">CodePen</a>
-                </li>
-                <li>
-                    <a href="https://www.eyrolles.com/Informatique/Livre/ergonomie-web-et-ux-design-4e-edition-9782212137361/"
-                       title="Se rendre sur le livre 'Ergonomie web et UX design' d'Amélie Boucher">Ergonomie web et
-                        UX design</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <input type="checkbox" name="software" id="software">
-            <label for="software">
-                Logiciels utilisés
-                <span class="arrow"></span>
-            </label>
-            <ul>
-                <li>
-                    <a href="https://www.jetbrains.com/fr-fr/phpstorm//" title="Se rendre sur le site de PhpStorm">PhpStorm</a>
-                </li>
-                <li>
-                    <a href="https://www.figma.com/fr-fr/" title="Se rendre sur Figma">Figma</a>
-                </li>
-                <li>
-                    <a href="https://www.adobe.com/be_fr/products/illustrator.html"
-                       title="Se rendre sur le site d'Illustrator">Illustrator</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <input type="checkbox" name="school" id="school">
-            <label for="school">
-                Établissements scolaires
-                <span class="arrow"></span>
-            </label>
-            <ul>
-                <li>
-                    <a href="https://www.hepl.be/fr" title="Se rendre sur le site de l'HEPL de Seraing">Haute École
-                        de la Province de Liège, Seraing</a>
-                </li>
-                <li>
-                    <a href="https://www.ecah.be/college/"
-                       title="Se rendre sur le site du collège St Croix">Collège St Croix et notre Dame, Hannut</a>
-                </li>
-                <li>
-                    <a href="https://www.ecah.be/lycee/"
-                       title="Se rendre sur le site du collège St Croix">Lycée St Croix et notre Dame, Hannut</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
-    <form action="#">
-        <label for="lang"></label>
-        <select title="Changer la langue du site" name="lang" id="lang">
-            <option value="fr">Français</option>
-            <option value="it">Italien</option>
-            <option value="en">Anglais</option>
-        </select>
-        <img src="src/SVG/web.svg" alt="icône représentant une planète pour le web">
-    </form>
+    <section>
+        <h2 class="sr-only">Footer</h2>
+        <ul class="wrapperFooterList">
+            <li>
+                <section>
+                    <input type="checkbox" name="coords" id="coords">
+                    <label for="coords" class="mobile-label">
+                        Coordonnées
+                        <span class="arrow"></span>
+                    </label>
+                    <h3 class="desktop-title">Coordonnées</h3>
+                    <ul>
+                        <li>anthonycoppens04@gmail.com</li>
+                        <li>Rue Henri Collin</li>
+                        <li>21, 1350</li>
+                        <li>Orp-Le-Grand</li>
+                    </ul>
+                </section>
+            </li>
+            <li>
+                <section>
+                    <input type="checkbox" name="tools" id="tools">
+                    <label for="tools" class="mobile-label">
+                        Outils
+                        <span class="arrow"></span>
+                    </label>
+                    <h3 class="desktop-title">Outils</h3>
+                    <ul>
+                        <li>
+                            <a href="https://zealdocs.org/" title="Se rendre sur Zeal">Zeal</a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/" title="Se rendre sur CodePen">CodePen</a>
+                        </li>
+                        <li>
+                            <a href="https://www.eyrolles.com/Informatique/Livre/ergonomie-web-et-ux-design-4e-edition-9782212137361/"
+                               title="Se rendre sur le livre 'Ergonomie web et UX design' d'Amélie Boucher">Ergonomie
+                                web et
+                                UX design</a>
+                        </li>
+                    </ul>
+                </section>
+            </li>
+            <li>
+                <section>
+                    <input type="checkbox" name="software" id="software">
+                    <label for="software" class="mobile-label">
+                        Logiciels utilisés
+                        <span class="arrow"></span>
+                    </label>
+                    <h3 class="desktop-title">Logiciels utilisés</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.jetbrains.com/fr-fr/phpstorm//"
+                               title="Se rendre sur le site de PhpStorm">PhpStorm</a>
+                        </li>
+                        <li>
+                            <a href="https://www.figma.com/fr-fr/" title="Se rendre sur Figma">Figma</a>
+                        </li>
+                        <li>
+                            <a href="https://www.adobe.com/be_fr/products/illustrator.html"
+                               title="Se rendre sur le site d'Illustrator">Illustrator</a>
+                        </li>
+                    </ul>
+                </section>
+            </li>
+            <li>
+                <section>
+                    <input type="checkbox" name="school" id="school">
+                    <label for="school" class="mobile-label">
+                        Établissements scolaires
+                        <span class="arrow"></span>
+                    </label>
+                    <h3 class="desktop-title">Établissements scolaires</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.hepl.be/fr" title="Se rendre sur le site de l'HEPL de Seraing">Haute
+                                École
+                                de la Province de Liège, Seraing</a>
+                        </li>
+                        <li>
+                            <a href="https://www.ecah.be/college/" title="Se rendre sur le site du collège St Croix">Collège
+                                St Croix et Notre-Dame, Hannut</a>
+                        </li>
+                        <li>
+                            <a href="https://www.ecah.be/lycee/" title="Se rendre sur le site du collège St Croix">Lycée
+                                St
+                                Croix et Notre-Dame, Hannut</a>
+                        </li>
+                    </ul>
+                </section>
+            </li>
+        </ul>
+        <div>
+            <form action="#">
+                <label for="lang"></label>
+                <select title="Changer la langue du site" name="lang" id="lang">
+                    <option value="fr">Français</option>
+                    <option value="it">Italien</option>
+                    <option value="en">Anglais</option>
+                </select>
+                <img src="src/SVG/web.svg" alt="icône représentant une planète pour le web">
+            </form>
 
-    <ul class="socials">
-        <li>
-            <a href="https://www.facebook.com/anthony.coppens.04/" title="Se rendre sur mon compte Facebook">
-                <img src="src/SVG/facebook.svg" alt="Logo de Facebook">
-            </a>
-        </li>
-        <li>
-            <a href="https://x.com/Anth0ny_O4" title="Se rendre sur mon compte Twitter">
-                <img src="src/SVG/twitter.svg" alt="Logo de Twitter">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/anthony_coppens/?hl=fr" title="Se rendre sur mon compte Instagram">
-                <img src="src/SVG/instagram.svg" alt="Logo d'Instagram">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/channel/UC1Ji-7un-eeXC6pyt3gZY_A" title="Se rendre sur mon compte Youtube">
-                <img src="src/SVG/youtube.svg" alt="Logo de Youtube">
-            </a>
-        </li>
-    </ul>
-    <div class="credits">
-        <a class="wordpress" href="https://wordpress.com/fr/" title="Se rendre sur le site de WordPress">Site inspiré de <span>WordPress</span></a>
-        <a href="" class="footerContactLink">Contactez-moi</a>
-    </div>
+            <ul class="socials">
+                <li>
+                    <a href="https://www.facebook.com/anthony.coppens.04/" title="Se rendre sur mon compte Facebook">
+                        <img src="src/SVG/facebook.svg" alt="Logo de Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/Anth0ny_O4" title="Se rendre sur mon compte Twitter">
+                        <img src="src/SVG/twitter.svg" alt="Logo de Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/anthony_coppens/?hl=fr"
+                       title="Se rendre sur mon compte Instagram">
+                        <img src="src/SVG/instagram.svg" alt="Logo d'Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UC1Ji-7un-eeXC6pyt3gZY_A"
+                       title="Se rendre sur mon compte YouTube">
+                        <img src="src/SVG/youtube.svg" alt="Logo de YouTube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="credits">
+        <h2 class="sr-only">Les crédits</h2>
+        <a class="wordpress" href="https://wordpress.com/fr/" title="Se rendre sur le site de WordPress">Site inspiré de
+            <span>WordPress</span></a>
+        <a href="" class="footerContactLink" title="Se rendre au formulaire de contact">Contactez-moi</a>
+    </section>
 </footer>
 </body>
 </html>
