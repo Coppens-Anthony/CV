@@ -1,10 +1,28 @@
+@import "sizes";
+
 footer {
   background-color: #101517;
   color: white;
+  padding-top: 4rem;
+
+  .footerLogo{
+    width: 60%;
+    margin: 0 0 2rem 4%;
+
+    @media (min-width: $breakpoint-m) {
+      width: 40%;
+      display: block;
+      margin: 0 auto 2rem;
+    }
+    @media (min-width: $breakpoint-xl) {
+      display: inline;
+      margin: 0 4% 2rem;
+      width: 30%;
+    }
+  }
 
   .wrapperFooterList {
     width: 92%;
-    padding: 2rem 0 0;
     margin: auto;
 
     @media (min-width: $breakpoint-m) {
@@ -21,7 +39,6 @@ footer {
     li {
       position: relative;
 
-      /* Labels utilisés en mobile uniquement */
       label {
         display: flex;
         justify-content: space-between;
@@ -81,18 +98,17 @@ footer {
       }
 
       h3 {
-        /* Masquer visuellement mais le garder dans le flux pour l'accessibilité */
-        position: absolute;  /* Retirer du flux visuel */
-        width: 0;            /* Ne pas prendre de place */
+        position: absolute;
+        width: 0;
         height: 0;
         margin: 0;
         padding: 0;
         border: none;
-        clip: rect(0 0 0 0); /* Utiliser le clipping pour rendre l'élément invisible mais dans le flux */
+        clip: rect(0 0 0 0);
         overflow: hidden;
 
         @media (min-width: $breakpoint-xl) {
-          position: static;   /* Remet l'élément dans le flux visuel */
+          position: static;
           width: auto;
           height: auto;
           clip: auto;
