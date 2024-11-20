@@ -1,7 +1,9 @@
 @import "sizes";
 
 .professionalExperiences {
-    ul {
+  margin-bottom: 0 !important;
+
+  ul {
     @media (min-width: $breakpoint-s) {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -74,29 +76,28 @@
     @media (min-width: $breakpoint-s) {
       top: 3rem;
       left: -75%;
-      clip-path: inset(0 0 calc(100% - 51.75%) 0);
     }
     @media (min-width: $breakpoint-m) {
       top: 3rem;
       left: -55%;
-      clip-path: inset(0 0 calc(100% - 47.4%) 0);
     }
-    @media (min-width: $breakpoint-intermediaire) {
-      clip-path: inset(0 0 calc(100% - 45.2%) 0);
+
+    @media (min-width: $breakpoint-l) {
+      top: 1rem;
+      left: -20%;
     }
     @media (min-width: $breakpoint-xl) {
-      top: 1rem;
-      left: -25%;
-      clip-path: inset(0 0 calc(100% - 46.1%) 0);
+      top: 0;
+      left: 0;
     }
 
     @media (min-width: $breakpoint-xxl) {
-      top: -1.5rem;
-      left: 5%;
-      clip-path: inset(0 0 calc(100% - 55.6%) 0);
+      top: 4rem;
+      left: 10%;
     }
-    @media (min-width: $breakpoint-xxl) {
-      clip-path: inset(0 0 calc(100% - 52.3%) 0);
+    @media (min-width: $breakpoint-desktop) {
+      top: 0;
+      left: 5%;
     }
 
   }

@@ -59,15 +59,12 @@ function stopTypingTextarea() {
     indexTextarea = 0; // Réinitialiser l'index
 }
 
-// Démarrer l'animation lorsque les champs sont hors focus
 input.addEventListener("blur", startTypingInput);
 textarea.addEventListener("blur", startTypingTextarea);
 
-// Arrêter l'animation lorsque les champs sont en focus
 input.addEventListener("focus", stopTypingInput);
 textarea.addEventListener("focus", stopTypingTextarea);
 
-// Démarrer l'animation au chargement de la page si les champs ne sont pas en focus
 window.addEventListener("load", () => {
     startTypingInput();
     startTypingTextarea();

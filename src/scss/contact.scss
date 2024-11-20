@@ -1,6 +1,14 @@
 @import "sizes";
 
 .contact {
+  background-color: #f6f7f7;
+  margin: 0 0 0 -4.2% !important;
+  padding: 6rem 13% 0 4%;
+  width: 108vw;
+  @media (min-width: $breakpoint-xxl) {
+    padding-right: 15%;
+  }
+
   form {
     margin-top: 2rem;
     display: flex;
@@ -8,10 +16,11 @@
 
     label{
       visibility: hidden;
+      height: 1px;
     }
 
     input, textarea {
-      margin: 0.5rem 0 1rem;
+      margin: 0 0 2rem;
       border: 1px solid #c3c4c7;
       border-radius: 6px;
       padding-left: 3%;
@@ -50,22 +59,21 @@
       border-radius: 7px;
       font-weight: 500;
       cursor: pointer;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
 
       &:hover{
         opacity: 0.8;
       }
       @media (min-width: $breakpoint-m) {
         width: 75%;
-        margin: auto;
+        margin: 1rem auto 4rem;
       }
+
       @media (min-width: $breakpoint-l) {
         width: 45%;
-        margin: auto;
       }
       @media (min-width: $breakpoint-xl) {
         width: 25%;
-        margin: 1rem auto 2rem;
       }
     }
   }

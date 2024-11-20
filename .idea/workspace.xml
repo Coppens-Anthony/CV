@@ -7,8 +7,9 @@
     <list default="true" id="9b70d4e7-ea73-4db6-9245-65b067dc2f86" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SVG/logoTrad.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/professionalExperiences.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/professionalExperiences.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +94,9 @@
       <workItem from="1731779110866" duration="962000" />
       <workItem from="1731849308955" duration="7514000" />
       <workItem from="1731915864792" duration="21743000" />
-      <workItem from="1732022115382" duration="8152000" />
+      <workItem from="1732022115382" duration="8399000" />
+      <workItem from="1732094454984" duration="3079000" />
+      <workItem from="1732109236705" duration="3027000" />
     </task>
     <servers />
   </component>
