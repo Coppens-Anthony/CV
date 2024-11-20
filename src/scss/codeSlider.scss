@@ -1,5 +1,6 @@
 .codeSlider {
   margin-top: 3rem;
+
   h2 {
     font-size: 0.75rem;
     font-family: "Inter", "Roboto", "Source Sans Pro", "Helvetica Neue", "Arial", sans-serif !important;
@@ -12,18 +13,25 @@
     justify-content: center;
     width: 100%;
     overflow: hidden;
-    height: 5rem;
 
     .highway-lane {
       display: flex;
 
       .highway-car {
-        flex: 1;
         display: flex;
+        flex: 1;
         justify-content: center;
         align-items: center;
         border-top: 1.5px solid #5671ec;
         padding: 2rem 0;
+
+        img {
+          width: 15%;
+          object-fit: cover;
+        }
+        .tsAndPhp{
+          width: 25%;
+        }
       }
     }
   }
@@ -31,17 +39,24 @@
 
 @keyframes translateInfinite {
   100% {
-    transform: translateX(calc(-180px * 9));
+    transform: translateX(calc(-200px * 8));
   }
 }
 
 #infinite {
   .highway-lane {
-    width: calc(180px * 18);
+    width: calc(200px * 16);
 
     .highway-car {
       width: 5%;
-      animation: translateInfinite 25s linear infinite;
+      animation: 18s translateInfinite infinite linear;
+      animation-play-state: running;
+    }
+  }
+
+  &:hover {
+    .highway-car {
+      animation-play-state: paused;
     }
   }
 }
