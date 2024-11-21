@@ -1,18 +1,54 @@
 @import "sizes";
 
-.software{
+.software {
   margin-bottom: 0;
-  h2{
-    font-size: 1.5rem;
+  @media (min-width: $breakpoint-l) {
+    display: flex;
+    justify-content: space-between;
   }
-  .softwareLink{
+  .softwareLogo{
+    width: 15%;
+    margin: 1.5rem 0;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .softwareLink {
     background-color: black;
     width: 85%;
     margin-bottom: 2rem;
+    @media (min-width: $breakpoint-l) {
+      width: 50%;
+    }
   }
 
-  img{
-    width: 10%;
-    filter: grayscale(1);
+  img {
+    width: 50%;
+    height: auto;
+  }
+
+
+  .softwareList {
+    display: none;
+  }
+
+
+  @media (min-width: $breakpoint-l) {
+    div {
+      width: 50%;
+
+      .description {
+        width: 90%;
+      }
+    }
+    .softwareList {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-row-gap: 2rem;
+      text-align: center;
+      align-items: center;
+      margin-top: 5rem;
+    }
   }
 }
