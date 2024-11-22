@@ -50,28 +50,41 @@ header {
           width: 30%;
           position: relative;
 
-          :hover ~ .menuDropped {
+          &:hover .menuDropped {
             visibility: visible;
-            width: 140%;
-            top: 2.5rem;
-            left: -20%;
-            height: auto;
+            opacity: 1;
           }
 
           .menuDropped {
             visibility: hidden;
+            opacity: 0;
             position: absolute;
-            height: 1px;
-            width: 1px;
+            top: 2rem;
+            left: -20%;
             background-color: #fff;
             flex-direction: column;
             border-radius: 5px;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+            width: 140%;
+            height: auto;
+            z-index: 10;
+            transition: visibility 0.5s ease, opacity 0.5s ease;
+
+            &::before {
+              content: '';
+              position: absolute;
+              top: -10px;
+              left: 50%;
+              transform: translateX(-50%);
+              border-width: 0 10px 10px 10px;
+              border-style: solid;
+              border-color: transparent transparent #fff transparent; 
+            }
 
             li {
               width: 100%;
               text-align: center;
-              margin: 1rem auto 1rem;
+              margin: 1rem auto;
 
               &:hover {
                 background-color: rgba(5, 93, 156, 0.13);
@@ -115,6 +128,7 @@ header {
       }
     }
   }
+
 
   .introduction {
     width: 92%;
