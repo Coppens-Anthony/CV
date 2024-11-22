@@ -4,6 +4,118 @@ header {
   background-color: #3858e9;
   color: white;
 
+  .fullNav {
+    display: none;
+
+    @media (min-width: $breakpoint-xxl) {
+      width: 96%;
+      margin: auto auto 5rem;
+      padding-top: 1.5rem;
+      display: flex;
+      align-items: center;
+
+      .navLogo {
+        width: 20%;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      nav {
+        margin-left: 3%;
+        width: 40%;
+
+        ul {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        li {
+          position: relative;
+
+          a {
+            color: white;
+            font-weight: 500;
+
+            &:hover {
+              color: rgba(255, 255, 255, 0.7);
+            }
+          }
+        }
+
+        .dropdown {
+          width: 30%;
+          position: relative;
+
+          :hover ~ .menuDropped {
+            visibility: visible;
+            width: 140%;
+            top: 2.5rem;
+            left: -20%;
+            height: auto;
+          }
+
+          .menuDropped {
+            visibility: hidden;
+            position: absolute;
+            height: 1px;
+            width: 1px;
+            background-color: #fff;
+            flex-direction: column;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+            li {
+              width: 100%;
+              text-align: center;
+              margin: 1rem auto 1rem;
+
+              &:hover {
+                background-color: rgba(5, 93, 156, 0.13);
+              }
+
+              a {
+                font-size: 0.8rem;
+                width: 100%;
+                display: inline-block;
+                font-weight: 600;
+                color: #055d9c;
+                padding: 0.5rem 0;
+              }
+            }
+          }
+
+          .competencies {
+            display: inline-block;
+            width: 100%;
+            cursor: pointer;
+            font-weight: 500;
+
+            &:hover {
+              color: rgba(255, 255, 255, 0.7);
+            }
+
+            &:after {
+              content: "";
+              display: inline-block;
+              position: absolute;
+              top: 0.4rem;
+              right: 5%;
+              width: 0.5rem;
+              height: 0.5rem;
+              border: solid white;
+              border-width: 0 2px 2px 0;
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+
   .introduction {
     width: 92%;
     margin: auto auto 5rem;

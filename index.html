@@ -20,6 +20,40 @@
 <body>
 <h1 class="sr-only">Bienvenue sur mon CV&nbsp;!</h1>
 <header>
+    <div class="fullNav">
+        <a href="/" class="navLogo">
+            <img src="src/SVG/logo.svg" alt="Logo du site" width="1252" height="121">
+        </a>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <p class="competencies">
+                        Compétences
+                    </p>
+                    <ul class="menuDropped">
+                        <li>
+                            <a href="#code" title="Se rendre à mes compétences en langages de programmation">Langages</a>
+                        </li>
+                        <li>
+                            <a href="#software" title="Se rendre à mes compétences avec des logiciels">Logiciels</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#professionalExperiences" title="Se rendre à la section des expériences professionnelles">
+                        Expériences professionnelles
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" title="Se rendre à la section des projets">
+                        Projets
+                    </a>
+                </li>
+
+            </ul>
+            <h2 class="sr-only">Navigation</h2>
+        </nav>
+    </div>
     <section class="introduction">
         <div>
             <h2>
@@ -30,16 +64,15 @@
                 Je suis actuellement en deuxième année de développement web à l'HEPL de Seraing, où j'approfondis mes
                 compétences en développement front-end et back-end. Aisni que travailler les designs.
             </p>
-            <a href="" title="Se rendre au formulaire de contact" class="classicLink">Contactez-moi</a>
+            <a href="#contact" title="Se rendre au formulaire de contact" class="classicLink">Contactez-moi</a>
         </div>
         <img src="" alt="Image représentant ....">
     </section>
-    <section class="codeSlider">
+    <section class="codeSlider" id="code">
         <h2>VOICI LES LANGAGES QUE J'AI APPRIS À MAÎTRISER</h2>
         <div id="infinite" class="highway-slider">
             <div class="highway-barrier">
                 <ul class="highway-lane">
-                    <!-- Première série d'éléments -->
                     <li class="highway-car">
                         <img src="src/SVG/html.svg" alt="Logo HTML">
                     </li>
@@ -65,7 +98,6 @@
                         <img src="src/SVG/flutter.svg" alt="Logo HTML" title="Logo Flutter">
                     </li>
 
-                    <!-- Deuxième série d'éléments (identiques à la première) -->
                     <li class="highway-car">
                         <img src="src/SVG/html.svg" alt="Logo HTML">
                     </li>
@@ -94,11 +126,9 @@
             </div>
         </div>
     </section>
-
-
 </header>
 <main>
-    <section class="professionalExperiences section">
+    <section class="professionalExperiences section" id="professionalExperiences">
         <h2>Mes expériences professionnelles</h2>
         <p class="description">
             Durant mon adolescence, j'ai eu l'occasion d'acquérir certaines compétences en effectuant de petits jobs.
@@ -160,7 +190,7 @@
                  alt="Image de fond d'une planète référence au Web">
         </div>
     </section>
-    <section class="contact section">
+    <section class="contact section" id="contact">
         <h2>Entrez en contact avec moi</h2>
         <p class="description">Si vous avez une question, une demande ou simplement envie d’échanger, je suis à votre
             écoute. N’hésitez pas
@@ -173,7 +203,7 @@
             <button type="submit" title="Envoyer les données">Envoyer</button>
         </form>
     </section>
-    <section class="projects section">
+    <section class="projects section" id="projects">
         <h2>Travaux, projets, réalisations</h2>
         <p class="description">Lors de mon apprentissage, j'ai eu l'occasion de réaliser plusieurs projets.</p>
         <a href="https://myportfolio.anthony-coppens.be/" title="Se rendre sur mon portfolio"
@@ -188,7 +218,7 @@
         <a href="https://github.com/Coppens-Anthony" title="Se rendre sur mon github" class="classicLink githubLink">Découvrir
             mon Github</a>
     </section>
-    <section class="section software">
+    <section class="section software" id="software">
         <div class="t">
             <img class="softwareLogo" src="src/SVG/software.svg" alt="Logo pour les logicels" width="361" height="121">
             <h2>Au sein de mon établissement scolaire, j'ai appris à utiliser certains logiciels. J'ai également appris
@@ -286,8 +316,8 @@
             </li>
             <li>
                 <section>
-                    <input type="checkbox" name="software" id="software">
-                    <label for="software" class="mobile-label">
+                    <input type="checkbox" name="software" id="softwareUsed">
+                    <label for="softwareUsed" class="mobile-label">
                         Logiciels utilisés
                         <span class="arrow"></span>
                     </label>
@@ -375,7 +405,7 @@
         <h2 class="sr-only">Les crédits</h2>
         <a class="wordpress" href="https://wordpress.com/fr/" title="Se rendre sur le site de WordPress">Site inspiré de
             <span>WordPress</span></a>
-        <a href="" class="footerContactLink" title="Se rendre au formulaire de contact">Contactez-moi</a>
+        <a href="#contact" class="footerContactLink" title="Se rendre au formulaire de contact">Contactez-moi</a>
     </section>
 </footer>
 </body>
