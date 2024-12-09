@@ -41,17 +41,17 @@
 
 @keyframes translateInfinite {
   100% {
-    transform: translateX(calc(-200px * 8));
+    transform: translateX(calc(-300px * 8));
   }
 }
 
 #infinite {
   .highway-lane {
-    width: calc(200px * 16);
+    width: calc(300px * 16);
 
     .highway-car {
       width: 5%;
-      animation: 18s translateInfinite infinite linear;
+      animation: 10s translateInfinite infinite linear;
       animation-play-state: running;
     }
   }

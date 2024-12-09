@@ -4,151 +4,7 @@ header {
   background-color: #3858e9;
   color: white;
 
-  .fullNav {
-    display: none;
-
-    @media (min-width: $breakpoint-xxl) {
-      width: 96%;
-      margin: auto auto 5rem;
-      padding-top: 1.5rem;
-      display: flex;
-      align-items: center;
-
-      .navLogo {
-        width: 20%;
-      }
-
-      img {
-        width: 100%;
-        height: auto;
-      }
-
-      nav {
-        width: 100%;
-
-        ul {
-          display: flex;
-          align-items: center;
-        }
-
-        li {
-          position: relative;
-          margin-left: 2%;
-
-          a {
-            color: white;
-            font-weight: 500;
-
-            &:hover {
-              color: rgba(255, 255, 255, 0.7);
-            }
-          }
-        }
-
-        .dropdown {
-          width: 14%;
-          position: relative;
-
-          &:hover .menuDropped {
-            visibility: visible;
-            opacity: 1;
-          }
-
-          .menuDropped {
-            visibility: hidden;
-            opacity: 0;
-            position: absolute;
-            top: 2rem;
-            left: -20%;
-            background-color: #fff;
-            flex-direction: column;
-            border-radius: 5px;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-            width: 140%;
-            height: auto;
-            z-index: 10;
-            transition: visibility 0.5s ease, opacity 0.5s ease;
-
-            &::before {
-              content: '';
-              position: absolute;
-              top: -10px;
-              left: 50%;
-              transform: translateX(-50%);
-              border-width: 0 10px 10px 10px;
-              border-style: solid;
-              border-color: transparent transparent #fff transparent;
-            }
-
-            li {
-              width: 100%;
-              text-align: center;
-              margin: 1rem auto;
-
-              &:hover {
-                background-color: rgba(5, 93, 156, 0.13);
-              }
-
-              a {
-                font-size: 0.8rem;
-                width: 100%;
-                display: inline-block;
-                font-weight: 600;
-                color: #055d9c;
-                padding: 0.5rem 0;
-              }
-            }
-          }
-
-          .competencies {
-            display: inline-block;
-            width: 100%;
-            cursor: pointer;
-            font-weight: 500;
-
-            &:hover {
-              color: rgba(255, 255, 255, 0.7);
-            }
-
-            &:after {
-              content: "";
-              display: inline-block;
-              position: absolute;
-              top: 0.4rem;
-              right: 10%;
-              width: 0.5rem;
-              height: 0.5rem;
-              border: solid white;
-              border-width: 0 2px 2px 0;
-              transform: rotate(45deg);
-            }
-          }
-        }
-      }
-      .github{
-        margin-left: 33%;
-      }
-      .contactNav{
-        background-color: #fff;
-        border-radius: 4px;
-        &:hover{
-          opacity: 0.7;
-        }
-        a{
-          color: black;
-          display: block;
-          padding: 0.5rem;
-          &:hover{
-            opacity: 0.8;
-            color: black;
-          }
-        }
-      }
-    }
-  }
-
-
-  .introduction {
+    .introduction {
     width: 92%;
     margin: auto auto 8rem;
     @media (min-width: $breakpoint-l) {
@@ -181,6 +37,9 @@ header {
       @media (min-width: $breakpoint-xl) {
         font-size: 4.5rem;
         line-height: 5rem;
+      }
+      span{
+        font-family: "Lora", "Cormorant", "serif" !important;
       }
     }
 
