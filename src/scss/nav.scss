@@ -1,3 +1,6 @@
+@import "sizes";
+
+
 .fullNav {
   width: 92%;
   margin: auto auto 2rem;
@@ -12,7 +15,7 @@
   }
 
   label {
-    width: 30%;
+    width: 5rem;
     cursor: pointer;
     z-index: 1;
 
@@ -84,10 +87,19 @@
     width: 92%;
     border-radius: 10px;
     transition: 0.2s;
-
   }
 
-  @media (min-width: $breakpoint-xxl) {
+  @media (min-width: $breakpoint-m) {
+    label{
+      width: 3rem;
+    }
+    input:checked ~ nav {
+      right: 2%;
+      width: 35%;
+    }
+
+  }
+  @media (min-width: $breakpoint-xl) {
     width: 96%;
     margin: auto auto 5rem;
     padding-top: 0.2rem;
@@ -213,7 +225,7 @@
             display: inline-block;
             position: absolute;
             top: 0.4rem;
-            right: 10%;
+            right: -5%;
             width: 0.5rem;
             height: 0.5rem;
             border: solid white;
@@ -224,7 +236,7 @@
       }
     }
     .github {
-      margin-left: 33%;
+      margin-left: 20%;
     }
     .contactNav {
       background-color: #fff;
