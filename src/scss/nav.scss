@@ -1,6 +1,5 @@
 @import "sizes";
 
-
 .fullNav {
   width: 92%;
   margin: auto auto 2rem;
@@ -17,22 +16,36 @@
   label {
     width: 5rem;
     cursor: pointer;
-    z-index: 1;
+    z-index: 3;
 
     span {
       display: block;
       margin-bottom: 0.3rem;
       background-color: white;
-      min-height: 0.1rem;
+      min-height: 0.07rem;
       border-radius: 5px;
-      box-shadow: 0 1px 0 0 #646970;
     }
   }
-
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 0;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+  }
   nav {
     visibility: hidden;
     position: absolute;
-    transition: 0.2s;
+    top: 0;
+    right: 10%;
+    transform: translate(55%, -40%) scale(0);
+    transform-origin: center;
+    transition: transform 0.5s ease, visibility 0.5s ease;
 
     ul {
       margin: auto;
@@ -82,19 +95,50 @@
 
   input:checked ~ nav {
     visibility: visible;
-    top: 1rem;
     background-color: #ffffff;
     width: 92%;
     border-radius: 10px;
-    transition: 0.2s;
+    transition: transform 0.5s ease, visibility 0.5s ease;
+    z-index: 2;
+    transform: translate(6.5%, 1rem) scale(1);
   }
 
+
+  input:checked ~ .overlay {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+  }
+
+
+  input:checked ~ label {
+    margin: 0.5rem 4% 0 0;
+
+    span {
+      background-color: #646970;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+
+      &.firstSpan {
+        transform: rotate(45deg) translate(4px, 5px);
+      }
+
+      &.secondSpan {
+        opacity: 0;
+      }
+
+      &.thirdSpan {
+        transform: rotate(-45deg) translate(4px, -5px);
+      }
+    }
+  }
+
+
   @media (min-width: $breakpoint-m) {
-    label{
+    label {
       width: 3rem;
     }
     input:checked ~ nav {
-      right: 2%;
+      right: 5%;
       width: 35%;
     }
 
@@ -106,8 +150,7 @@
     display: flex;
     align-items: center;
 
-    input,
-    label {
+    input, label {
       visibility: hidden;
       position: absolute;
       width: 0;
@@ -127,6 +170,8 @@
       width: 100%;
       visibility: visible;
       position: relative;
+      transform: none;
+      right: 0;
 
       ul {
         width: 100%;
@@ -145,6 +190,7 @@
             font-weight: 500;
             text-transform: none;
             font-size: 1rem;
+
             &:after {
               content: none;
             }

@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b70d4e7-ea73-4db6-9245-65b067dc2f86" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/js/burgerMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/textAuto.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/nav.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +19,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -111,7 +122,9 @@
       <workItem from="1733302867904" duration="1862000" />
       <workItem from="1733316951676" duration="1000" />
       <workItem from="1733739919004" duration="8406000" />
-      <workItem from="1733752436959" duration="996000" />
+      <workItem from="1733752436959" duration="5089000" />
+      <workItem from="1734991824976" duration="72000" />
+      <workItem from="1737208687928" duration="4054000" />
     </task>
     <servers />
   </component>
