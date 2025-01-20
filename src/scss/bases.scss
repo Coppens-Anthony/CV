@@ -6,6 +6,14 @@
 }
 html{
   scroll-behavior: smooth;
+  @media (min-width: $breakpoint-desktopXL) {
+    width: 50%;
+    margin: auto;
+  }
+  @media (min-width: $breakpoint-desktopXXL) {
+    width: 30%;
+    margin: auto;
+  }
 }
 body {
   background-color: #f6f7f7;
@@ -80,6 +88,9 @@ a {
     width: 120vw;
     height: 1px;
     background-color: #c3c4c7;
+    @media (min-width: $breakpoint-desktopXL) {
+      width: 109.5%;
+    }
   }
 
   @media (min-width: $breakpoint-xxl) {

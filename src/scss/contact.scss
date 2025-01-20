@@ -8,6 +8,10 @@
   @media (min-width: $breakpoint-xxl) {
     padding-right: 15%;
   }
+  @media (min-width: $breakpoint-desktopXL) {
+    width: 110%;
+    padding-right: 0;
+  }
 
   form {
     margin-top: 2rem;

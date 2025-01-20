@@ -100,6 +100,14 @@
       top: 0;
       left: 5%;
     }
+    @media (min-width: $breakpoint-desktopL) and (max-width: $breakpoint-desktopXL) {
+      top: 0;
+      left: 40%;
+    }
+    @media (min-width: $breakpoint-desktopXL) and (max-width: $breakpoint-desktopXXL) {
+      top: 0;
+      left: 5%;
+    }
 
   }
 }

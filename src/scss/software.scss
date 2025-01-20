@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
   }
-  .softwareLogo{
+  .softwareLogo {
     width: 15%;
     margin: 1.5rem 0;
   }
@@ -28,12 +28,6 @@
     height: auto;
   }
 
-
-  .softwareList {
-    display: none;
-  }
-
-
   @media (min-width: $breakpoint-l) {
     div {
       width: 50%;
@@ -42,13 +36,72 @@
         width: 90%;
       }
     }
-    .softwareList {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-row-gap: 2rem;
-      text-align: center;
-      align-items: center;
-      margin-top: 5rem;
-    }
+  }
+}
+
+.highway-slider {
+  position: relative;
+  overflow: hidden;
+  width: 108%;
+  margin-left: -4%;
+  padding-bottom: 4rem;
+}
+
+.highway-lane {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scrollInfinite 10s linear infinite;
+}
+
+.highway-lane.duplicate {
+  height: 1px;
+  opacity: 0;
+  width: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.highway-car {
+  flex: 0 0 auto;
+  width: 40%;
+  padding: 0 1rem;
+
+  img{
+    height: 5rem;
+  }
+}
+
+@keyframes scrollInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-350%);
+  }
+}
+
+@media (min-width: $breakpoint-l) {
+  .highway-slider {
+    overflow: visible;
+    padding: 5rem 0 0 5%;
+  }
+  .highway-lane {
+    animation: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 1rem;
+    align-items: center;
+  }
+  .highway-lane.duplicate {
+    height: 1px;
+    opacity: 0;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .highway-car {
+    width: 120%;
   }
 }
