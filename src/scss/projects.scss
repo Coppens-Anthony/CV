@@ -1,17 +1,74 @@
 @import "sizes";
 
 .projects {
-  ul {
-    display: flex;
-    justify-content: space-between;
-    overflow: visible;
-    li{
-      width: 32%;
+  .highway-slider {
+    overflow: hidden;
+    width: 108%;
+    margin-left: -4%;
+
+
+    .highway-lane {
+      display: flex;
+      justify-content: space-between;
+      overflow: visible;
+      width: calc(500px * 6);
+      animation: scroll 10s linear infinite;
+
+      &:hover {
+        animation-play-state: paused;
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-500px * 3);
+        }
+      }
+
+      .highway-car {
+        display: flex;
+        align-items: center;
+        margin-right: 1%;
+        position: relative;
+        transition: 1s;
+
+        @media (min-width: $breakpoint-l) {
+          width: 32%;
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
+
+        &:hover {
+          filter: grayscale(60%);
+          transition: 1s;
+
+          .projectsLink {
+            opacity: 1;
+            transition: 0.4s;
+          }
+        }
+
+        .projectsLink {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          background-color: #1b1919;
+          opacity: 0;
+          color: white;
+          transform-origin: center center;
+          transform: translate(-50%, -50%);
+          transition: 0.4s;
+          padding: 1rem 10%;
+          border-radius: 5px;
+        }
+      }
     }
-  }
-  img{
-    max-width: 100%;
-    height: auto;
   }
 
   .smallGithub {
