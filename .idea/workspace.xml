@@ -8,9 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/bases.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/bases.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/professionalExperiences.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/professionalExperiences.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/sizes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/sizes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/codeSlider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/codeSlider.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/projects.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/software.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/software.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,6 +127,8 @@
       <workItem from="1737208687928" duration="4332000" />
       <workItem from="1737294467164" duration="3229000" />
       <workItem from="1737379694065" duration="6078000" />
+      <workItem from="1737465373521" duration="6192000" />
+      <workItem from="1737551731499" duration="1319000" />
     </task>
     <servers />
   </component>

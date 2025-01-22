@@ -1,16 +1,30 @@
 @import "sizes";
 
 .projects {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    overflow: visible;
+    li{
+      width: 32%;
+    }
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
   .smallGithub {
     font-size: 0.8rem;
     text-align: center;
     color: #3858e9;
-    margin: 0 0 1rem;
+    margin: 2rem 0 1rem;
     @media (min-width: $breakpoint-m) {
       font-size: 1rem;
     }
     @media (min-width: $breakpoint-l) {
       font-size: 1.2rem;
+      margin: 4rem auto 3rem;
     }
 
     span {

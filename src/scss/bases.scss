@@ -95,6 +95,7 @@ a {
 
   @media (min-width: $breakpoint-xxl) {
     margin-top: 6rem;
+    padding-bottom: 3rem;
   }
   h2 {
     @media (min-width: $breakpoint-xxl) {
@@ -125,7 +126,7 @@ a {
       width: 40%;
     }
     @media (min-width: $breakpoint-xl) {
-      width: 30%;
+      width: 20%;
     }
     @media (min-width: $breakpoint-xxl) {
       margin: 2rem 0 4rem;
