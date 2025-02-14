@@ -2,3 +2,8 @@
 !.gitignore
 !src
 !index.html
+node_modules
+dist
+.idea
+.vite
+
