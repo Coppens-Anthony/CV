@@ -1,2 +1,4 @@
-/.vite/
-/node_modules/
+*
+!.gitignore
+!src
+!index.html
